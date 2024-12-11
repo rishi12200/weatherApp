@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 //encoding the input as utf-8 for spacing errors
             String encoded = URLEncoder.encode( editText.getText().toString(), "UTF-8");
             Log.i("encoded",encoded);
-            task.execute("https://api.openweathermap.org/data/2.5/weather?q=" + encoded + "&appid=47770aace70542bee16fc9c87fa87fb5");
+            task.execute("https://api.openweathermap.org/data/2.5/weather?q=" + encoded + "&appid=/*INSERT API*/");
 
 
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
